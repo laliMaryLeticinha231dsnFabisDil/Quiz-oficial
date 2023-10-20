@@ -6,10 +6,10 @@
 }
 
 body {
-    background-color: #001e4d;
+    background-color: #6d0b78;
 }
 
-.aplicativo {
+.app {
     background-color: #ffff;
     width: 90%;
     max-width: 600px;
@@ -18,9 +18,9 @@ body {
     padding: 30px;
 }
 
-.aplicativo h1 {
+.app h1 {
     font-size: 25px;
-    color: #001e4d;
+    color: #3f1957;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -32,7 +32,7 @@ body {
 
 .quiz h2 {
     font-size: 18px;
-    color: #001e4d;
+    color: #57097d;
     font-weight: 600;
 }
 
@@ -50,13 +50,17 @@ body {
     transition: all 0.3s;
 }
 
-.btn:hover {
-    background-color: black;
+.btn:hover:not([disbled]) {
+    background-color: rgb(208, 108, 215);
     color: white;
 }
 
-#botao-avancar{
-  background-color: #001e4d;
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+  background-color: #a23da9;
   color: white;
   font-weight: 500;
   width: 150px;
@@ -68,83 +72,19 @@ body {
   display: none;
 }
 
+.correct{
+    background: rgba(0, 128, 0, 0.516);
+
+}
+
+.incorrect{
+    background: rgba(255, 0, 0, 0.393) ;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    background-image: linear-gradient(92.7deg, rgba(245, 212, 212, 1) 8.5%, rgba(252, 251, 224, 1) 90.2%);
+#MinhaImagem{
+    width: 20vh;
+    height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin-left: 20vh;
 }
-
-@font-face {
-    font-family: Cutive;
-    src: url(font/CutiveMono-Regular.ttf);
-}
-
-@font-face {
-    font-family: Quick;
-    src: url(font/Quicksand-VariableFont_wght.ttf);
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.807);
-    width: 80vw;
-    height: 60vh;
-    margin-top: 8%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
-    border-radius: 20px;
-}
-
-.TituloOficial {
-    font-family: Quick;
-    margin-top: 12%;
-}
-
-
-/* começo das perguntas */
-
-/* #Pergunta {
-    background-color: white;
-    width: 120vh;
-    height: 80vh;
-    margin-top: 5%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px;
-}
-
-.TituloPergunta {
-    margin-top: 8%;
-    font-family: Quick;
-}
-
-.pergunta-oficia {
-    margin-top: 12%;
-}
-
-.alternativaTotal {
-justify-content: start;
-} */
