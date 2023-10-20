@@ -56,6 +56,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const MinhaImagem = document.getElementById("MinhaImagem")
 
+
 let currentQuestionIndex = 0;
 let score = 0;
 let wrongAttempts = 0;
